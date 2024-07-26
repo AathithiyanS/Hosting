@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: blanchedalmond;
+        }
+        nav{
+            background-color:firebrick;
+            display: flex ;
+            justify-content:end;
+        }
+        nav>a{
+            background-color: coral;
+            margin:1% ;
+        }
+        h1{
+            text-align: center;
+        }
+        .grid-container{
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-gap: 15px;
+        }
+        .grid-item-1,.grid-item-2{
+            grid-column-start:1;
+            grid-column-end: 2;
+            display:grid;
+            grid-template-columns: 2fr 3fr;
+        }
+        h2{
+            grid-column: 1/-1;
+        }
+        .grid-item-3{
+            grid-column-start:2;
+            grid-column-end: 3;
+            grid-row-start:1;
+            grid-row-end: 3;
+            align-content: center;
+            justify-content: center;
+            border: 2px solid;
+            padding: 5px;
+        }
+        img{
+            height: 300px;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+     <nav>
+        <a href="">Home</a>
+        <a href="">Category</a>
+        <a href="">About</a>
+        <a href="">Contact</a>
+     </nav>
+    <h1>SPORTS ARTICLE</h1>
+    <div class="grid-container">
+        <div class="grid-item-1">
+            <h2>CRICKET</h2>
+            <div class="inner">
+                <img height="100%" width="100%"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOOYFCRmrqa7njnBnW9dkaZaYLAapbVt0l9w&s" alt="">
+            </div>
+            <div class="inner">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque rem quisquam eius corporis consequatur non aliquam vel accusantium totam corrupti? Enim, totam laborum tempora saepe adipisci cumque eveniet voluptas, iusto, accusantium culpa nisi et veniam? Quidem laboriosam est qui aut soluta dolore maxime dolores ea! Vitae praesentium, sint ea aliquid quidem eveniet sit magni. Maiores magni similique officiis fugiat in dicta sequi quod! Exercitationem neque voluptatem quo amet earum tempore dolor iste, aliquam animi consequuntur, cupiditate saepe dignissimos eveniet a, at suscipit veritatis. Ducimus dicta vitae officia quas nemo, nulla, obcaecati voluptas odio dignissimos natus voluptatum dolores magni dolorum necessitatibus!</p>
+            </div>
+        </div>
+        <div class="grid-item-2">
+            <h2>FOOTBALL</h2>
+            <div class="inner">
+                <img height="100%" width="100%"
+                src="https://www.kreedon.com/wp-content/uploads/2019/08/Newsweek.jpg" alt="">
+            </div>
+            <div class="inner">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque rem quisquam eius corporis consequatur non aliquam vel accusantium totam corrupti? Enim, totam laborum tempora saepe adipisci cumque eveniet voluptas, iusto, accusantium culpa nisi et veniam? Quidem laboriosam est qui aut soluta dolore maxime dolores ea! Vitae praesentium, sint ea aliquid quidem eveniet sit magni. Maiores magni similique officiis fugiat in dicta sequi quod! Exercitationem neque voluptatem quo amet earum tempore dolor iste, aliquam animi consequuntur, cupiditate saepe dignissimos eveniet a, at suscipit veritatis. Ducimus dicta vitae officia quas nemo, nulla, obcaecati voluptas odio dignissimos natus voluptatum dolores magni dolorum necessitatibus!</p>
+            </div>
+        </div>
+        <div class="grid-item-3">
+            <aside>
+                <h2>Quotes</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus quae eius adipisci dolorem corporis consequatur explicabo modi tempora doloremque minima porro officia hic debitis ratione quisquam quasi iste magnam delectus autem ullam, suscipit praesentium blanditiis harum! Nobis obcaecati eos expedita sed libero reiciendis maiores alias voluptate suscipit pariatur? Animi culpa quae, a ipsum labore molestiae omnis quia sunt cum. Neque beatae, perspiciatis modi illo nemo reprehenderit accusamus culpa nostrum velit reiciendis porro, optio veniam obcaecati.</p>
+            <br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates nobis deleniti numquam consequuntur repellendus culpa, illo ullam cupiditate provident praesentium deserunt voluptatibus aspernatur magni fugiat laudantium totam non impedit soluta. </p>
+        </aside>
+       </div>
+     </div>
+</body>
+</html>
