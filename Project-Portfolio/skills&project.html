@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+            background-color: black;
+            color: white;
+            justify-content: center;
+            align-content: center;
+        }
+        nav{
+            display:flex;
+            justify-content: end;
+            align-content: center;
+            border: 1px solid;
+        }
+        nav > a{
+            margin:1%;
+            color: white;
+        }
+        nav> h3{
+            margin-right: auto;
+            margin-left: 1%;    
+        }
+        .container{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            padding: 100px;
+        }
+        .container> div{
+            border: 1px solid ;
+            border-radius: 5px;
+            background-color:darkgray;
+            margin: 2%;
+        }
+        </style>
+</head>
+<body>
+    <nav>
+        <h3>NavBar</h3>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="skills&project.html">Skills&Projects</a>
+        <a href="">Experience</a>
+        <a href="">Contact</a>
+    </nav>
+    <div class="container">
+        <div>
+            <h1>Technical Skills:</h1>
+            <ul>
+                <li>Programming Languages:</li>
+                <ul>
+                    <li>Java</li>
+                    <li>C++</li>
+                </ul>
+                <li>Web development</li>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                </ul>
+                <li>Database</li>
+                <ul>
+                    <li>SQL</li>
+                </ul>
+                <li>Data Structures and Algorithms</li>
+            </ul>
+        </div>
+        <div>
+            <h1>Certificates:</h1>
+             <ul>
+                <li>Java</li>
+                <li>C++</li>
+                <li>Frontend Development</li>
+             </ul>
+        </div>
+        <div>
+            <h1>Internships:</h1>
+            <ul>
+                <li>
+                    <h3>Kinpaun Technologies</h3>
+                    <p>Product development and web development intership for3 months.</p>
+                </li>
+                <li>
+                    <h3>Edunet Foundation</h3>
+                    <p>Training and project on AI,Cloud for one month on IBM Cloud platform</p>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
